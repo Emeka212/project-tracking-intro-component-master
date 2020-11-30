@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <title>Frontend Mentor | Project tracking intro component</title>
+  
+</head>
+<body>
+  <!-- header section -->
+  <header>
+    <!-- logo img/icon -->
+    <div class="logo_div">
+      <img src="images/logo.svg">
+    </div>
+    <!-- link list -->
+    <div class="links">   
+      <li>PRODUCT</li>
+      <li>FEATURES</li>
+      <li>PRICING</li>
+      <li class="dot">.</li>
+      <li class="hr"><hr /></li>
+      <li>LOGIN</li>
+    </div>
+    <div class="open_close">
+      <img src="images/icon-hamburger.svg" class="open" onclick="open_menu()">
+      <img src="images/icon-close.svg" class="close" onclick="close_menu()">
+    </div>
+  </header>
+  <!-- for the img and img_bg -->
+  <div class="img_bg">
+    <img src="images/illustration-devices.svg">
+  </div>
+  <!-- for the left/top text -->
+  <div class="left_top_txt">
+    <div class="first_text">
+      <span>New</span> MONOGRAPH DASHBOARD
+    </div>
+    <h1>POWERFUL INSIGHTS INTO YOUR TEAM</h1>
+    <div class="third_txt">
+      Project planning and time tracking for agile teams
+    </div>
+    <div class="btn_last_txt">
+      <button>SCHEDULE A DEMO</button>
+      <button class="second_btn">TO SEE A LIVE PREVIEW</button>
+    </div>
+  </div>
+  
+  
+  
+  <footer>
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://mc-stephen.000webhostapp.com">Emeka Stephen Michael</a>.
+  </div>
+  </footer>
+<script type="text/javascript">
+  var open = document.querySelector('.open');
+  var close = document.querySelector('.close');
+  var links = document.querySelector('.links');
+  function open_menu() {
+    open.style.display = "none";
+    close.style.display = "block";
+    links.style.display = "block";
+  }
+  function close_menu() {
+    open.style.display = "block";
+    close.style.display = "none";
+    links.style.display = "none";
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+/*Feel free to remove these styles or customise in your own stylesheet 👍 */
+.attribution { font-size: 11px; text-align: center;}
+.attribution a { color: hsl(228, 45%, 44%); }
+li{list-style: none;}
+button{outline: none;}
+footer{position: absolute;margin-bottom: 5px;width: 100%;}
+body{
+	padding: 0px;
+	margin: 0px;
+	font-family: Arial;
+	font-family: [Barlow](https://fonts.google.com/specimen/Barlow);
+	background: #fff;
+	font-weight: 400px;
+	overflow-x: hidden;
+}
+header{
+	position: relative;
+	width: 100%;
+	padding: 50px 0px 50px 0px;
+	z-index: 1;
+}
+.logo_div{
+	position: relative;
+	margin-left: 4%;
+}
+.links{
+	position: absolute;
+	display: flex;
+	top: 60px;
+	right: 4%;
+}
+.links li{
+	margin-right: 50px;
+	font-weight: bold;
+	color: hsl(230, 29%, 20%);
+	cursor: pointer;
+	font-size: 15px;
+}
+.links li:hover{
+	text-decoration: underline;
+	color: hsl(230, 11%, 40%);
+}
+.open_close{
+	position: absolute;
+	top: 55px;
+	right: 4%;
+	cursor: pointer;
+	display: none;
+}
+.dot{
+	position: relative;
+	top: -5px;
+	cursor: context-menu !important;
+	text-decoration: none !important;
+	color: hsl(231, 7%, 65%) !important;
+}
+.hr{
+	display: none;
+}
+.img_bg{
+	top: 0px;
+	right: -300px;
+	height: 400px;
+	position: absolute;
+	background: hsl(207, 33%, 95%);
+	border-radius: 0px 0px 0px 50px;
+}
+.img_bg img{
+	position: relative;
+	top: 170px;
+}
+.left_top_txt{
+	margin-left: 4%;
+	margin-top: 90px;
+	z-index: 1;
+}
+.left_top_txt .first_text{
+	color: hsl(231, 7%, 65%);
+	letter-spacing: 5px;
+	font-size: 15px;
+}
+.left_top_txt .first_text span{
+	font-weight: bold;
+	padding: 5px 10px 5px 10px;
+	border-radius: 50px;
+	color: #fff;
+	letter-spacing: 0px;
+	background: hsl(230, 29%, 20%);
+}
+.left_top_txt h1{
+	width: 45%;
+	font-size: 50px;
+	color: hsl(230, 29%, 20%);
+}
+.left_top_txt .third_txt{
+	color: hsl(230, 11%, 40%);
+	font-size: 16px;
+	line-height: 20px;
+	width: 20%;
+	margin-bottom: 80px;
+}
+.left_top_txt .btn_last_txt button{
+	color: #f5f5f5;
+	font-size: 13px;
+	font-weight: bold;
+	border: 2px solid hsl(0, 100%, 65%);
+	background: hsl(0, 100%, 68%);
+	height: 40px;
+	padding: 0px 20px 0px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-left: 0%;
+	margin-bottom: 50px;
+}
+.left_top_txt .btn_last_txt button:hover{
+	background: hsl(0, 100%, 64%)
+}
+.left_top_txt .btn_last_txt .second_btn{
+	background: transparent !important;
+	border: none !important;
+	color: hsl(231, 7%, 65%) !important;
+}
+@media screen and (max-width: 1300px){
+	.links{
+		right: 1%;
+	}
+	.img_bg{
+		right: -350px;
+	}
+}
+@media screen and (max-width: 1100px){
+	.img_bg{
+		right: -400px;
+	}
+}
+@media screen and (max-width: 1000px){
+	.img_bg{
+		right: -50%;
+	}
+}
+@media screen and (max-width: 940px){
+	.img_bg{
+		right: -55%;
+	}
+}
+@media screen and (max-width: 905px){
+	.img_bg{
+		right: -60%;
+	}
+}
+@media screen and (max-width: 875px){
+	.img_bg{
+		right: -65%;
+	}
+	.left_top_txt .first_text{
+		width: 40%;
+		line-height: 25px;
+	}
+}
+@media screen and (max-width: 800px){
+    header{
+    	padding: 30px 0px 30px 0px;
+    }
+	.links{
+		display: block;
+		text-align: center;
+		background: #fff;
+		width: 90%;
+		left: 51%;
+		transform: translateX(-50%);
+		border-radius: 5px;
+		margin-top: 50px;
+		padding-top: 30px;
+		box-shadow: 0px 5px 10px 1px hsl(231, 7%, 65%);
+		display: none;
+	}
+	.links li{
+		padding: 0px 0px 30px 0px;
+		margin-left: 50px;
+		font-weight: bolder !important;
+	}
+	.dot{
+		display: none;
+	}
+	.hr{
+		display: block;
+	}
+	.open_close{
+		right: 5%;
+		top: 37px;
+		display: block;
+	}
+	.close{
+		display: none;
+	}
+	.img_bg{
+		top: -100px;
+		right: -50%;
+		height: auto;
+		position: relative;
+		padding-top: 150px;
+		padding-bottom: 50px;
+	}
+	.img_bg img{
+		width: 150%;
+		top: 0px;
+		right: 53%;
+	}
+	.left_top_txt{
+		position: relative;
+		margin-left: 4%;
+		margin-top: -50px;
+		z-index: 1;
+	}
+	.left_top_txt .first_text{
+		width: 100%;
+	}
+	.left_top_txt h1{
+		width: 95%;
+		font-size: 40px;
+	}
+	.left_top_txt .third_txt{
+		font-size: 15px;
+		width: 90%;
+		margin-bottom: 40px;
+	}
+	.left_top_txt .btn_last_txt{
+		line-height: 25px;
+	}
+	.left_top_txt .btn_last_txt button{
+		padding: 0px 20px 0px 20px;
+		line-height: 20px;
+	}
+}
+
